@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/ListaDeJogos/static/css/main.80bcbd02.css",
-    "main.js": "/ListaDeJogos/static/js/main.a426712e.js",
+    "main.js": "/ListaDeJogos/static/js/main.1bbc1eb9.js",
     "static/js/787.95604983.chunk.js": "/ListaDeJogos/static/js/787.95604983.chunk.js",
     "static/media/logo.svg": "/ListaDeJogos/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/ListaDeJogos/index.html",
     "main.80bcbd02.css.map": "/ListaDeJogos/static/css/main.80bcbd02.css.map",
-    "main.a426712e.js.map": "/ListaDeJogos/static/js/main.a426712e.js.map",
+    "main.1bbc1eb9.js.map": "/ListaDeJogos/static/js/main.1bbc1eb9.js.map",
     "787.95604983.chunk.js.map": "/ListaDeJogos/static/js/787.95604983.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.80bcbd02.css",
-    "static/js/main.a426712e.js"
+    "static/js/main.1bbc1eb9.js"
   ]
 }
