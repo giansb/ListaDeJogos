@@ -1,35 +1,30 @@
 import { useState } from "react";
-import { colecaoDados } from "../colecao";
 import './style.css';
 import ComponentCard from "../card";
+import { buscarJogo, filtrarJogo, retornarJogos } from "../../servico";
 
 export default function ComponenteLista(){
 
-    const [lista, setLista] = useState(colecaoDados);
-
+    const [lista, setLista] = useState(retornarJogos());
+    const [texto, setTexto] = useState("");
   
 
     const BuscarJogoPlataforma = (plataforma) => {
-        setLista(
-            colecaoDados.filter((jogo) =>{
-                return jogo.plataforma == plataforma;
-            })
-        
-        );
+        setLista(filtrarJogo(plataforma));
+        setTexto("");
 
     }
 
     const LimparBusca = () => {
-        setLista(
-            colecaoDados
-        )
+        setLista( retornarJogos());
+        setTexto("");
     }
 
     const BuscarJogo = (texto) => {
+        setTexto(texto);
+        setLista(buscarJogo(texto))
         
-        setLista(lista.filter((jogo) =>
-        jogo.nome.toLowerCase().includes(texto.toLowerCase()) || 
-        jogo.plataforma.toLowerCase().includes(texto.toLowerCase())))
+     
     }
 
     return(
