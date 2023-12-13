@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300&family=Roboto+Slab&display=swap');
+
+*{
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+.principal{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.lista-botoes{
+    
+    margin: 0 15px;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    
+}
+
+
+.lista-botoes button{
+    border: 0px;
+    height: 30px;
+}
+
+.lista-botoes button:hover{
+    border: 2px solid white;
+}
+
+.lista-filtros button{
+    width: 200px;
+}
+
+.lista-botoes .lista-filtros button:focus{
+    border: 2px solid black;
+}
+
+.pesquisa{
+    margin: 30px 0;
+    max-width: 600px;
+}
+
+
+
+.limpar{
+    width: 100%;
+    background-color: grey;
+}
+
+.xbox{
+    background-color: rgb(88, 255, 88);
+    font-weight: bold;
+    color: rgb(255, 255, 255)
+}
+
+.play{
+    background-color: blue;
+    font-weight: bold;
+    color: rgb(255, 255, 255)
+}
+
+.nintendo{
+    background-color: red;
+    font-weight: bold;
+    color: rgb(255, 255, 255)
+}
+
+@media(max-width:700px){
+    .lista-filtros{
+        display: flex;
+        flex-flow: column nowrap;
+
+    }
+
+    .lista-filtros button{
+        width: 90vw;
+    }
+
+    .pesquisa{
+        margin: 30px 0;
+        width: 90;
+    }
+
+    .lista-array{
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .pesquisa{
+        width: 90%;
+    }
+}
